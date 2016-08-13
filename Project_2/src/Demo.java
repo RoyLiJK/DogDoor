@@ -9,6 +9,7 @@ public static void main(String[] args)
 		Scanner k = new Scanner(System.in);
 		Scanner ky = new Scanner(System.in);
 		int m = 0;
+		double z = 0;
 		while(true)
 		{
 			
@@ -38,8 +39,8 @@ public static void main(String[] args)
 		if(m == 2){
 					System.out.println("Please enter the ticket number: ");
 					System.out.println();
-					m = (int) k.nextDouble();
-					Ticket newTicket = new Ticket(m);
+					z =  k.nextDouble();
+					Ticket newTicket = new Ticket(z);
 					ParkingLot.unparkCar(newTicket);
 					continue;
 				}
